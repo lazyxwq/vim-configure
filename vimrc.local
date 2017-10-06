@@ -47,12 +47,12 @@ set expandtab "当设置成expandtab时，缩进用空格表示，noexpandtab则
 
 " Source a global configuration file if available
 " 禁用vundle管理工具
-"if filereadable("/etc/vim/vimrc.vundle")
-"  source /etc/vim/vimrc.vundle
-"endif
+if filereadable("/etc/vim/vimrc.vundle")
+  source /etc/vim/vimrc.vundle
+endif
 
 " Source a global configuration file if available
 " 启用vam管理工具
-if filereadable("/etc/vim/vimrc.vam")
-  source /etc/vim/vimrc.vam
-endif
+"if filereadable("/etc/vim/vimrc.vam")
+"  source /etc/vim/vimrc.vam
+"endif

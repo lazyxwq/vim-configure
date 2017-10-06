@@ -35,9 +35,9 @@ Plugin 'VundleVim/Vundle.vim'
 " 安装L9，如果已经安装过这个插件，可利用以下格式避免命名冲突
 "Plugin 'ascenator/L9', {'name': 'newL9'}
 
-Plugin 'kien/ctrlp'
+Plugin 'kien/ctrlp.vim'
 Plugin 'sukima/xmledit'
-Plugin 'sjl/gundo'
+Plugin 'sjl/gundo.vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'klen/python-mode'
 Plugin 'Valloric/ListToggle'
@@ -51,11 +51,11 @@ Plugin 'scrooloose/nerdcommenter'
 " vim-scriptsrepos
 Plugin 'YankRing.vim'
 Plugin 'vcscommand.vim'
-Plugin 'ShowPairs.vim'
+Plugin 'ShowPairs'
 Plugin 'SudoEdit.vim'
-Plugin 'EasyGrep.vim'
-Plugin 'VOoM.vim'
-Plugin 'VimIM.vim'
+Plugin 'EasyGrep'
+Plugin 'VOoM'
+Plugin 'VimIM'
 Plugin 'taglist.vim'
 Plugin 'cscope.vim'
 
