@@ -1,0 +1,52 @@
+"add for VAM 现在都切换到vundle上去了，vam注释掉
+"fun SetupVAM()
+"        set runtimepath+=/mnt/share/win-share/git/vim/vim-addon-manager
+"        " commenting try .. endtry because trace is lost if you use it.
+"        " There should be no exception anyway
+"        " try
+"        call vam#ActivateAddons(['taglist'], {'auto_install' : 0})
+"        call vam#ActivateAddons(['vim-go'], {'auto_install' : 0})
+"        "上一句是自动开启taglist，没有就自动安装
+"        "call vam#ActivateAddons(['p1', 'p2'], {'force_loading_plugins_now' : 1})
+"        " pluginA could be github:YourName see vam#install#RewriteName()
+"        " catch /.*/
+"        "  echoe v:exception
+"        " endtry
+"endf
+"call SetupVAM()
+" experimental: run after gui has been started (gvim) [3]
+" option1:  au VimEnter * call SetupVAM()
+" option2:  au GUIEnter * call SetupVAM()
+" See BUGS sections below [*]
+
+" 在当前目录下自动搜索tags，如果没有就往上一级目录搜索
+set tags=tags;/
+
+" 不同时显示多个文件的tag，只显示当前文件的
+let Tlist_Show_One_File=1
+" 如果taglist窗口时最后一个窗口，则退出vim
+let Tlist_Exit_OnlyWindow=1
+" 将taglist和ctags关联
+let Tlist_Ctags_Cmd="/usr/bin/ctags"
+" 自动打开taglist窗口
+let Tlist_Auto_Open=1
+" taglist始终解析文件中的tag，不管taglist窗口有没有打开
+let Tlist_Process_File_Always=1
+
+"显示行号
+set number
+"设置匹配模式，类似当输入一个左括号时会匹配相应得那个右括号
+set showmatch
+
+" 设置代码缩进
+set ts=4 "代表一个tab是多少个空格长度，默认8
+set tabstop=4 "和ts=4一样
+set softtabstop=4 "表示在编辑模式得时候按退格键得时候退回缩进得长度，当使用expandtab时特别有用
+set shiftwidth=4 "表示每一级缩进得长度，一般设置成和softtabstop一样
+set expandtab "当设置成expandtab时，缩进用空格表示，noexpandtab则是用制表符表示一个缩进。
+
+" Source a global configuration file if available
+if filereadable("/etc/vim/vimrc.vundle")
+  source /etc/vim/vimrc.vundle
+endif
+
