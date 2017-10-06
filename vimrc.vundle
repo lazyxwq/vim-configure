@@ -35,9 +35,9 @@ Plugin 'VundleVim/Vundle.vim'
 " 安装L9，如果已经安装过这个插件，可利用以下格式避免命名冲突
 "Plugin 'ascenator/L9', {'name': 'newL9'}
 
-Plugin 'kien/ctrlp.vim'
+Plugin 'kien/ctrlp'
 Plugin 'sukima/xmledit'
-Plugin 'sjl/gundo.vim'
+Plugin 'sjl/gundo'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'klen/python-mode'
 Plugin 'Valloric/ListToggle'
@@ -51,12 +51,13 @@ Plugin 'scrooloose/nerdcommenter'
 " vim-scriptsrepos
 Plugin 'YankRing.vim'
 Plugin 'vcscommand.vim'
-Plugin 'ShowPairs'
+Plugin 'ShowPairs.vim'
 Plugin 'SudoEdit.vim'
-Plugin 'EasyGrep'
-Plugin 'VOoM'
-Plugin 'VimIM'
+Plugin 'EasyGrep.vim'
+Plugin 'VOoM.vim'
+Plugin 'VimIM.vim'
 Plugin 'taglist.vim'
+Plugin 'cscope.vim'
 
 " 你的所有插件需要在下面这行之前
 call vundle#end()            " 必须
@@ -64,7 +65,7 @@ call vundle#end()            " 必须
 filetype plugin indent on    " 必须 加载vim自带和插件相应的语法和文件类型相关脚本
 " 忽视插件改变缩进,可以使用以下替代:
 
-filetype plugin on
+"filetype plugin on
 "
 " 简要帮助文档
 " :PluginList       - 列出所有已配置的插件
