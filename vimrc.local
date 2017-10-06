@@ -46,7 +46,13 @@ set shiftwidth=4 "表示每一级缩进得长度，一般设置成和softtabstop
 set expandtab "当设置成expandtab时，缩进用空格表示，noexpandtab则是用制表符表示一个缩进。
 
 " Source a global configuration file if available
-if filereadable("/etc/vim/vimrc.vundle")
-  source /etc/vim/vimrc.vundle
-endif
+" 禁用vundle管理工具
+"if filereadable("/etc/vim/vimrc.vundle")
+"  source /etc/vim/vimrc.vundle
+"endif
 
+" Source a global configuration file if available
+" 启用vam管理工具
+if filereadable("/etc/vim/vimrc.vam")
+  source /etc/vim/vimrc.vam
+endif
