@@ -47,6 +47,11 @@ Plugin 'scrooloose/syntastic'
 Plugin 't9md/vim-quickhl'
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'scrooloose/nerdcommenter'
+" 添加golang开发环境所需插件
+Plugin 'cespare/vim-config' "golang 自动添加/移除import
+Plugin 'dgryski/vim-godef' "自动跳转
+Plugin 'Blackrush/vim-gocode' "自动补全代码
+Plugin 'majutsushi/tagbar' "显示tags
 ""..................................
 " vim-scriptsrepos
 Plugin 'YankRing.vim'
