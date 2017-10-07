@@ -1,24 +1,3 @@
-"add for VAM 现在都切换到vundle上去了，vam注释掉
-"fun SetupVAM()
-"        set runtimepath+=/mnt/share/win-share/git/vim/vim-addon-manager
-"        " commenting try .. endtry because trace is lost if you use it.
-"        " There should be no exception anyway
-"        " try
-"        call vam#ActivateAddons(['taglist'], {'auto_install' : 0})
-"        call vam#ActivateAddons(['vim-go'], {'auto_install' : 0})
-"        "上一句是自动开启taglist，没有就自动安装
-"        "call vam#ActivateAddons(['p1', 'p2'], {'force_loading_plugins_now' : 1})
-"        " pluginA could be github:YourName see vam#install#RewriteName()
-"        " catch /.*/
-"        "  echoe v:exception
-"        " endtry
-"endf
-"call SetupVAM()
-" experimental: run after gui has been started (gvim) [3]
-" option1:  au VimEnter * call SetupVAM()
-" option2:  au GUIEnter * call SetupVAM()
-" See BUGS sections below [*]
-
 " 在当前目录下自动搜索tags，如果没有就往上一级目录搜索
 set tags=tags;/
 
@@ -53,10 +32,12 @@ endif
 
 " Source a global configuration file if available
 " 启用vam管理工具
-"if filereadable("/etc/vim/vimrc.vam")
+if filereadable("/etc/vim/vimrc.vam")
 "  source /etc/vim/vimrc.vam
-"endif
-"
+endif
+
+
+nmap <C-n> :NERDTreeToggle<CR>
 
 " add for golang
 autocmd BufWritePre *.go :Fmt

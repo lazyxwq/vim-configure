@@ -10,6 +10,7 @@ call vundle#begin('/etc/vim/bundle')
 
 " 让vundle管理插件版本,必须
 Plugin 'VundleVim/Vundle.vim'
+"Plugin 'gmarik/Vundle.vim'
 
 " 以下范例用来支持不同格式的插件安装.
 " 请将安装插件的命令放在vundle#begin和vundle#end之间.
@@ -47,11 +48,30 @@ Plugin 'scrooloose/syntastic'
 Plugin 't9md/vim-quickhl'
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-fugitive'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'vim-scripts/grep.vim'
+"Plugin 'vim-scripts/CSApprox'
+Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'Raimondi/delimitMate'
+Plugin 'Yggdroot/indentLine'
+Plugin 'avelino/vim-bootstrap-updater'
+Plugin 'sheerun/vim-polyglot'
 " 添加golang开发环境所需插件
-Plugin 'cespare/vim-config' "golang 自动添加/移除import
+"Plugin 'cespare/vim-config' "golang
+"自动添加/移除import，这家伙得插件用了兼容vi得操作，不知道怎么取消，使用另外一个人得vim-golang插件
+Plugin 'jnwhiteh/vim-golang'
 Plugin 'dgryski/vim-godef' "自动跳转
 Plugin 'Blackrush/vim-gocode' "自动补全代码
 Plugin 'majutsushi/tagbar' "显示tags
+Plugin 'fatih/vim-go'
+Plugin 'rjohnsondev/vim-compiler-go'
+Plugin 'vim-jp/vim-go-extra'
 ""..................................
 " vim-scriptsrepos
 Plugin 'YankRing.vim'
