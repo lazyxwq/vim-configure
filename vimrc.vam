@@ -1,6 +1,7 @@
 "add for VAM
 fun SetupVAM()
-        set runtimepath+=/mnt/share/win-share/git/vim/vim-addon-manager
+        "set runtimepath+=/mnt/share/win-share/git/vim/vim-addon-manager
+        set runtimepath+=/etc/vim/vam/vim-addon-manager
         " commenting try .. endtry because trace is lost if you use it.
         " There should be no exception anyway
         " try
